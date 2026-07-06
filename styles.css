@@ -3055,6 +3055,7 @@ a {
   .about-photo {
     width: 100%;
     height: auto;
+    background: transparent;
   }
 
   .about-photo-event { aspect-ratio: 2955 / 3855; }
@@ -3069,6 +3070,7 @@ a {
     inset: 0;
     width: 100%;
     height: 100%;
+    border-radius: inherit;
     transform: none;
   }
 
@@ -3132,12 +3134,14 @@ a {
   }
 
   .project-visual {
+    order: 1;
     height: auto;
     min-height: 0;
     aspect-ratio: 1590 / 1800;
   }
 
   .project-info-column {
+    order: 2;
     height: auto;
     gap: 16px;
   }
@@ -3166,6 +3170,38 @@ a {
     padding-bottom: 12px;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .about-text-card { order: 1; }
+  .about-callout-event { order: 2; }
+  .about-photo-event { order: 3; }
+  .about-callout-books { order: 4; }
+  .about-photo-book-orange { order: 5; }
+  .about-photo-book-jung { order: 6; }
+  .about-photo-book-form { order: 7; }
+  .about-callout-paintings { order: 8; }
+  .about-photo-painting-blue { order: 9; }
+  .about-photo-drawing { order: 10; }
+  .about-photo-house { order: 11; }
+  .about-contact-bar { order: 12; }
+
+  .about-callout {
+    width: 100%;
+    height: auto;
+    min-height: 64px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 14px 18px;
+    border-radius: var(--card-radius);
+    font-size: 16px;
+    line-height: 22px;
+    background: rgba(255, 255, 255, 0.84);
+  }
+
+  .about-callout::before,
+  .about-callout::after {
+    display: none;
   }
 
   .roots-about-section {
