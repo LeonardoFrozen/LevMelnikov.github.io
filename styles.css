@@ -1191,6 +1191,69 @@ a {
   max-width: none;
   pointer-events: none;
   z-index: 0;
+  --connector-color: rgba(255, 249, 231, 0.54);
+  --connector-size: 1px;
+}
+
+.flow-connector::before,
+.flow-connector::after {
+  content: "";
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.flow-horizontal::before {
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: var(--connector-size);
+  background: var(--connector-color);
+  transform: translateY(-50%);
+}
+
+.flow-horizontal::after {
+  right: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-top: var(--connector-size) solid var(--connector-color);
+  border-right: var(--connector-size) solid var(--connector-color);
+  transform: translate(1px, -50%) rotate(45deg);
+}
+
+.flow-vertical::before {
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: var(--connector-size);
+  background: var(--connector-color);
+  transform: translateX(-50%);
+}
+
+.flow-vertical::after {
+  left: 50%;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border-right: var(--connector-size) solid var(--connector-color);
+  border-bottom: var(--connector-size) solid var(--connector-color);
+  transform: translate(-50%, 1px) rotate(45deg);
+}
+
+.flow-elbow {
+  border-left: var(--connector-size) solid var(--connector-color);
+  border-bottom: var(--connector-size) solid var(--connector-color);
+}
+
+.flow-elbow::after {
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  border-top: var(--connector-size) solid var(--connector-color);
+  border-right: var(--connector-size) solid var(--connector-color);
+  transform: translate(1px, 50%) rotate(45deg);
 }
 
 .flow-node {
