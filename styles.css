@@ -3157,6 +3157,10 @@ a {
     margin-top: 28px;
   }
 
+  .project-tags span {
+    border-width: 1.625px;
+  }
+
   .project-description-card h2,
   .project-description-card p,
   .project-description-card-wide p {
