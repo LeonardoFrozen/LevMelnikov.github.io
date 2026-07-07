@@ -3159,6 +3159,7 @@ a {
 
   .project-tags span {
     border-width: 1.625px;
+    border-color: var(--muted);
   }
 
   .project-description-card h2,
