@@ -3265,13 +3265,14 @@ a {
     min-height: 760px;
     margin-top: 72px;
     padding: 32px 24px;
+    border-radius: clamp(8px, 2.4vw, 14px);
   }
 
   .roots-task-card > img {
-    top: 8%;
-    left: -72%;
+    top: 0;
+    left: -86%;
     width: auto;
-    height: 84%;
+    height: 100%;
     object-fit: contain;
   }
 
