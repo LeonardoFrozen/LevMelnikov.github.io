@@ -1202,6 +1202,10 @@ a {
   vector-effect: non-scaling-stroke;
 }
 
+.flow-lines-svg .flow-backbone {
+  marker-end: none;
+}
+
 .flow-lines-svg marker path {
   fill: none;
   stroke: rgba(255, 249, 231, 0.72);
