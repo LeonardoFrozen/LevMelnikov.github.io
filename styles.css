@@ -1195,11 +1195,12 @@ a {
 .flow-lines-svg path {
   fill: none;
   stroke: rgba(255, 249, 231, 0.64);
-  stroke-width: 0.9;
+  stroke-width: 0.85;
   stroke-linecap: round;
   stroke-linejoin: round;
   marker-end: url("#flow-arrow");
   vector-effect: non-scaling-stroke;
+  shape-rendering: geometricPrecision;
 }
 
 .flow-lines-svg .flow-backbone {
@@ -1209,7 +1210,7 @@ a {
 .flow-lines-svg marker path {
   fill: none;
   stroke: rgba(255, 249, 231, 0.64);
-  stroke-width: 1.05;
+  stroke-width: 0.95;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
