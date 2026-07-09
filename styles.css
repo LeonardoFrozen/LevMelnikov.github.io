@@ -1151,16 +1151,6 @@ a {
     "Segoe UI", sans-serif;
 }
 
-.roots-userflow-reference {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .roots-userflow-title {
   position: absolute;
   top: 8.3682%;
@@ -1172,7 +1162,7 @@ a {
   font-weight: 400;
   line-height: normal;
   text-transform: none;
-  display: none;
+  display: block;
 }
 
 .roots-userflow-canvas {
@@ -1182,7 +1172,7 @@ a {
   width: 89.3333%;
   aspect-ratio: 1072 / 539;
   overflow: visible;
-  display: none;
+  display: block;
 }
 
 .roots-userflow-lines {
@@ -3456,15 +3446,6 @@ a {
     width: auto;
     margin-bottom: 28px;
     font-size: 20px;
-  }
-
-  .roots-userflow-reference {
-    position: relative;
-    inset: auto;
-    width: 1200px;
-    max-width: none;
-    height: auto;
-    object-fit: contain;
   }
 
   .roots-userflow-canvas {
