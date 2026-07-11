@@ -3945,3 +3945,131 @@ a {
     font-size: 15px;
   }
 }
+
+@media (orientation: landscape) and (max-height: 620px) {
+  .roots-about-section {
+    aspect-ratio: auto;
+    min-height: 820px;
+    overflow: hidden;
+  }
+
+  .roots-about-label {
+    font-size: clamp(14px, 1.45vw, 20px);
+  }
+
+  .roots-about-copy {
+    top: 6.8%;
+    font-size: clamp(15px, 1.65vw, 23px);
+    line-height: 1.22;
+  }
+
+  .roots-task-card {
+    top: 34%;
+    height: 56%;
+    min-height: 430px;
+  }
+
+  .roots-task-card > img {
+    left: -4%;
+    width: 118%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .roots-task-text h2 {
+    margin-bottom: 10px;
+    font-size: clamp(15px, 1.55vw, 21px);
+  }
+
+  .roots-task-text p {
+    font-size: clamp(13px, 1.35vw, 18px);
+    line-height: 1.22;
+  }
+
+  .roots-task-text-task {
+    top: 14%;
+  }
+
+  .roots-task-text-goal {
+    top: 63%;
+  }
+
+  .roots-research-section {
+    aspect-ratio: auto;
+    min-height: 780px;
+    overflow: hidden;
+  }
+
+  .roots-research-card {
+    padding: 18px;
+  }
+
+  .roots-research-card h3 {
+    margin-bottom: 13px;
+    font-size: clamp(15px, 1.45vw, 20px);
+  }
+
+  .roots-research-card ul {
+    gap: 9px;
+    padding-left: 22px;
+    font-size: clamp(12px, 1.18vw, 16px);
+    line-height: 1.24;
+  }
+
+  .roots-research-card p,
+  .roots-values-list p {
+    font-size: clamp(12px, 1.18vw, 16px);
+    line-height: 1.24;
+  }
+
+  .roots-research-card-pains,
+  .roots-research-card-features {
+    height: auto;
+    min-height: 560px;
+  }
+
+  .roots-research-card-mission {
+    height: auto;
+    min-height: 122px;
+  }
+
+  .roots-research-card-values {
+    height: auto;
+    min-height: 154px;
+  }
+
+  .roots-research-card-vision {
+    height: auto;
+    min-height: 162px;
+  }
+
+  .roots-business-section {
+    aspect-ratio: auto;
+    min-height: 680px;
+    overflow: hidden;
+  }
+
+  .roots-business-mockup {
+    top: 10%;
+    height: 70%;
+  }
+
+  .roots-business-card {
+    top: 10%;
+    height: auto;
+    min-height: 430px;
+    padding: 18px;
+  }
+
+  .roots-business-card h2 {
+    margin-bottom: 14px;
+    font-size: clamp(15px, 1.45vw, 20px);
+  }
+
+  .roots-business-card ul {
+    gap: 9px;
+    padding-left: 22px;
+    font-size: clamp(12px, 1.18vw, 16px);
+    line-height: 1.24;
+  }
+}
